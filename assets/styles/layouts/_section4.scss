@@ -77,10 +77,10 @@
               
               }
               .img1 {
-                background: url(/assets/img/event-01.jpg) center/cover; 
+                background: url(../img/event-01.jpg) center/cover; 
               }
               .img2 {
-                background: url(/assets/img/event-02.jpg) center/cover; 
+                background: url(../img/event-02.jpg) center/cover; 
               }
 
               .text {
@@ -121,7 +121,7 @@
             }
           }
             .event-right {
-              background: url(/assets/img/event-03.jpg) center/cover;
+              background: url(../img/event-03.jpg) center/cover;
                 &-content {
                   background: $color1;
                   width: 90%;
