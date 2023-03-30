@@ -1,0 +1,223 @@
+.section4 {
+  // border: 2px solid red;
+  width: 95%;
+  margin: 100px auto;
+  text-align: center;
+  @media screen and (max-width:660px) {
+    display: none;
+  }
+    &-content h3 {
+      font-family: $font1;
+      font-weight: 100;
+      font-size: 40px;
+      color: $color7;
+      text-transform: capitalize;
+    }
+    &-content h2 {
+      font-family: $font2;
+      font-weight: 900;
+      font-size: 32px;
+      color: $color1;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      line-height: 22px;
+    }
+    &-content img {
+      margin-bottom: 35px;
+    }
+      .event-container {
+        // border: 2px solid yellow;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .event-left{ 
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          gap: 10px;
+          padding-right: 15px;
+          .event-content-left {
+            // border: 2px solid purple;
+            flex: 1;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 1fr;
+              .img {
+                // border: 2px solid green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .date {
+                  // border: 2px solid blue;
+                  background: $color6;
+                  width: 80px;
+                  height: 80px;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  & h2 {
+                    font-family: $font3;
+                    font-weight: 700;
+                    font-size: 27px;
+                    color: $color1;
+                    margin-bottom: 0px;
+                    line-height: 22px;
+                  }
+                  & h3 {
+                    font-family: $font3;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $color1;
+                    margin-bottom: 0px;
+                    line-height: 22px;
+                    background: $color6;
+                  }
+                }
+              
+              }
+              .img1 {
+                background: url(/assets/img/event-01.jpg) center/cover; 
+              }
+              .img2 {
+                background: url(/assets/img/event-02.jpg) center/cover; 
+              }
+
+              .text {
+                background: $color1;
+                padding: 20px;
+                text-align: start;
+                letter-spacing: 2px;
+                & h3 {
+                  font-family: $font3;
+                  font-weight: 500;
+                  font-size: 21px;
+                  color: $color6;
+                  margin-top: 20px;
+                  // line-height: 0px;
+                }
+                & p {
+                  font-family: $font3;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: $color8;
+                  margin: 30px 0;
+                  // line-height: 22px;
+                    & i{
+                      color: $color8;
+                      font-size: 11px;
+                    }
+                }
+                & h4 {
+                  font-family: $font3;
+                  font-weight: 700;
+                  font-size: 13px;
+                  color: $color6;
+                  margin: 20px 0;
+                  text-transform: uppercase;
+                  // line-height: 22px;
+                }
+              }
+            }
+          }
+            .event-right {
+              background: url(/assets/img/event-03.jpg) center/cover;
+                &-content {
+                  background: $color1;
+                  width: 90%;
+                  margin: 15% auto;
+                  // padding: 20px;
+                  text-align: center;
+                  letter-spacing: 2px;
+                    .date2 {
+                      // border: 2px solid red;
+                      background: $color6;
+                      width: 80px;
+                      height: 80px;
+                      margin: 0 auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      & h2 {
+                        font-family: $font3;
+                        font-weight: 700;
+                        font-size: 27px;
+                        color: $color1;
+                        margin-bottom: 0px;
+                        line-height: 22px;
+                      }
+                      & h6 {
+                        font-family: $font3;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $color1;
+                        margin-bottom: 0px;
+                        line-height: 22px;
+                        background: $color6;
+                      }
+                    }
+                    & h3 {
+                      font-family: $font3;
+                      font-weight: 500;
+                      font-size: 21px;
+                      color: $color6;
+                      margin-top: 20px;
+                      // line-height: 0px;
+                    }
+                    & p {
+                      font-family: $font3;
+                      font-weight: 400;
+                      font-size: 14px;
+                      color: $color8;
+                      margin: 30px 0;
+                      // line-height: 22px;
+                        & i{
+                          color: $color8;
+                          font-size: 11px;
+                        }
+                    }
+                    & h4 {
+                      font-family: $font3;
+                      font-weight: 700;
+                      font-size: 13px;
+                      color: $color6;
+                      margin: 20px 0;
+                      text-transform: uppercase;
+                      // line-height: 22px;
+                    }
+                    
+                    & h3 {
+                      font-family: $font3;
+                      font-weight: 500;
+                      font-size: 21px;
+                      color: $color6;
+                      margin-top: 20px;
+                      // line-height: 0px;
+                    }
+                    & p {
+                      font-family: $font3;
+                      font-weight: 400;
+                      font-size: 14px;
+                      color: $color8;
+                      margin: 30px 0 60px;
+                      // line-height: 22px;
+                        & i{
+                          color: $color8;
+                          font-size: 11px;
+                        }
+                    }
+                    & h4 {
+                      font-family: $font3;
+                      font-weight: 700;
+                      font-size: 13px;
+                      color: $color6;
+                      margin: 20px 0 0;
+                      text-transform: uppercase;
+                      padding-bottom: 40px;
+                      // line-height: 22px;
+                    }
+                }
+            }
+          }
+}

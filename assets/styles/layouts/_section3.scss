@@ -1,0 +1,131 @@
+.section3{
+    .section-content {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      background: $color3;
+      width: 95%;
+      margin: 0 auto 40px;
+      @media screen and (max-width:1030px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    // .left, .right {
+    //   border: 2px solid black;
+    // }
+    .left {
+      background: $color3;
+      border: 1px dashed $color1;
+      text-align: center;
+      margin: 20px;
+        & h3 {
+          font-family: $font1;
+          font-weight: 100;
+          font-size: 40px;
+          color: $color7;
+          text-transform: capitalize;
+          line-height: 20px;
+          padding-top: 30px;
+        }
+        & h2 {
+          font-family: $font2;
+          font-weight: 700;
+          font-size: 21px;
+          color: $color1;
+          text-transform: uppercase;
+          margin-bottom: 35px;
+        }
+        & h4 {
+          font-family: $font2;
+          font-weight: 100;
+          font-size: 18px;
+          color: $color7;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          margin-top: 35px;
+        }
+        & p {
+          font-family: $font3;
+          font-weight: 400;
+          font-size: 14px;
+          color: $color1;
+          text-transform: capitalize;
+        }
+        .number {
+          padding-bottom: 15px;
+        }
+    }
+    .right {
+      background: $color1;
+      text-align: center;
+        & h3 {
+          font-family: $font1;
+          font-weight: 100;
+          font-size: 40px;
+          color: $color7;
+          text-transform: capitalize;
+          line-height: 20px;
+          padding-top: 50px;
+        }
+        & h2 {
+          font-family: $font2;
+          font-weight: 700;
+          font-size: 29px;
+          color: $color6;
+          text-transform: uppercase;
+          margin-bottom: 35px;
+        }
+        & img {
+          margin-bottom: 35px;
+        }
+        .form form{
+          // border: 2px solid black;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 85%;
+          margin: 0 auto;
+          gap: 15px;
+          // padding: 20px;
+          @media screen and (max-width:660px) {
+            grid-template-columns: 1fr;
+            width: 60%;
+          }
+          // padding: 15px;
+            .btn {
+              width: 180px;
+              height: 45px;
+              background: $color3;
+              border: none;
+              border-radius: 25px;
+              color: $color1;
+              margin: 40px auto;
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              transition: 0.3s;
+              @media screen and (max-width:660px) {
+                width: 160px;
+                height: 35px;
+              }
+                &:hover {
+                  transform: scale(1.05);
+                }
+            }
+        }
+    }
+  select {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color8;
+    background: none;
+    padding: 15px 0;
+    width: 85%;
+    padding-left: 0px;
+  }
+  input:not(input[type=submit]) {
+    border: none;
+    border-bottom: 1px solid $color8;
+    background: none;
+    padding: 15px 0;
+    width: 85%;
+    
+  }
+}

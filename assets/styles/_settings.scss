@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: 'Allura', cursive;
+$font2: 'Poppins', sans-serif;
+$font3: 'Roboto', sans-serif;
+$color1: #eeeeee;
+$color2: #C28B5F;
+$color3: black;
+$color4: #c8c9c8;
+$color5: #A9A69E;
+$color6: #21201e;
+$color7: #a67245;
+$color8: #b6b6b6;
+
+
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $color6;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color: $color1;
+  display: inline-block;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.07);
+    }
+}
+i { 
+  color: $color1;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+  }
+}
+
+//     PLACEHOLDERS
+%center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+%center-col-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+%center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%space-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%space-a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
